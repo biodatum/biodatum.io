@@ -7,4 +7,6 @@ import tailwindcss from '@tailwindcss/vite'
 export default defineConfig({
   base: process.env.BASE_PATH || '/',
   plugins: [react(), tailwindcss()],
+  // One HTML file per page.
+  build: { rollupOptions: { input: ['index.html', 'bricks/index.html'] } },
 })

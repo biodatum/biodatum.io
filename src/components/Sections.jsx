@@ -3,7 +3,7 @@ import { about, audiences, services, process, faq, rates, work } from '../conten
 import { bookingLink } from './mail'
 import CountUp from './CountUp'
 
-function Section({ id, eyebrow, title, intro, tone = 'light', children }) {
+export function Section({ id, eyebrow, title, intro, tone = 'light', children }) {
   return (
     <section id={id} className={tone === 'tint' ? 'bg-white' : ''}>
       <div className="mx-auto max-w-6xl px-6 py-20 sm:py-24">

@@ -235,3 +235,31 @@ export const work = [
     note: 'Single-cell profiling',
   },
 ]
+
+// Biodatum Bricks page (/bricks/). Keep the status and module list in step with github.com/biodatum/nf-modules.
+export const bricks = {
+  name: 'Biodatum Bricks',
+  eyebrow: 'Open-source Nextflow modules',
+  title: 'Biodatum Bricks',
+  text: 'Nextflow DSL2 modules for genomics tools that nf-core/modules does not cover. MIT licensed.',
+  status: 'In preparation: no module is released yet.',
+  repoUrl: 'https://github.com/biodatum/nf-modules',
+  principles: [
+    { title: 'Conda first', text: 'Each module carries its own environment file with exact versions. A container line is added only where a public image exists.' },
+    { title: 'nf-core layout', text: 'One tool per module, following the nf-core module structure, designed to be installable with the nf-core tools.' },
+    { title: 'Fail loudly', text: 'Output checks and no hidden errors: a step that fails should stop the run.' },
+    { title: 'Public test data', text: 'Modules are tested with public data only. If a module already exists in nf-core, use that one.' },
+  ],
+  // licence = licence of the wrapped tool; each tool keeps its own.
+  modules: [
+    { name: 'yak/qv', text: 'Consensus quality value of an assembly from short-read k-mers.', licence: 'MIT' },
+    { name: 'craq', text: 'Assembly quality assessment.', licence: 'MIT' },
+    { name: 'inspector', text: 'Long-read assembly evaluation.', licence: 'MIT' },
+    { name: 'flare', text: 'Local ancestry inference.', licence: 'Apache-2.0' },
+    { name: 'yleaf/predict', text: 'Y-chromosome haplogroup prediction.', licence: 'GPL-3.0' },
+    { name: 'samtools/mapqdist', text: 'Mapping quality distribution of aligned reads.', licence: 'MIT' },
+    { name: 'samtools/bamtocram', text: 'BAM to CRAM conversion.', licence: 'MIT' },
+    { name: 'samtools/cramtobam', text: 'CRAM to BAM conversion.', licence: 'MIT' },
+    { name: 'samtools/fetchcramregion', text: 'Fetch regions from a CRAM file.', licence: 'MIT' },
+  ],
+}
