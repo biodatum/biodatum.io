@@ -21,7 +21,7 @@ export default function Bricks() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 rounded-md bg-glow px-5 py-3 font-semibold text-ink transition hover:bg-white"
               >
-                Follow on GitHub <ExternalLink size={16} aria-hidden="true" />
+                View on GitHub <ExternalLink size={16} aria-hidden="true" />
                 <span className="sr-only"> (opens in a new tab)</span>
               </a>
             </div>
@@ -30,7 +30,7 @@ export default function Bricks() {
         </div>
       </div>
 
-      <Section id="principles" eyebrow="How they will be built" title="Small, predictable building blocks.">
+      <Section id="principles" eyebrow="How they are built" title="Small, predictable building blocks.">
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
           {bricks.principles.map((p) => (
             <div key={p.title} className="border-t-2 border-accent pt-5">
@@ -45,7 +45,7 @@ export default function Bricks() {
         id="modules"
         tone="tint"
         eyebrow="Modules"
-        title="Planned for the first release."
+        title="In release v0.1.0."
         intro="Each wrapped tool keeps its own licence, shown next to the module."
       >
         <ul className="divide-y divide-line border-y border-line">

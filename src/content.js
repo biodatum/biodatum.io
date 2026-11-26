@@ -242,7 +242,7 @@ export const bricks = {
   eyebrow: 'Open-source Nextflow modules',
   title: 'Biodatum Bricks',
   text: 'Nextflow DSL2 modules for genomics tools that nf-core/modules does not cover. MIT licensed.',
-  status: 'In preparation: no module is released yet.',
+  status: 'Release v0.1.0: nine modules, tested with conda/mamba.',
   repoUrl: 'https://github.com/biodatum/nf-modules',
   principles: [
     { title: 'Conda first', text: 'Each module carries its own environment file with exact versions. A container line is added only where a public image exists.' },
